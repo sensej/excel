@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Javascript Excel</title>
+  </head>
+  <body>
+    <!-- Комментарий -->
+    <div id="app" class="container">
+      <div class="excel">
+        <div class="excel__header">
+          <input
+            type="text"
+            class="excel__header-input"
+            value="Новая таблица"
+          />
+
+          <div>
+            <div class="excel__header-button">
+              <span class="material-icons">delete_outline</span>
+            </div>
+            <div class="excel__header-button">
+              <span class="material-icons">exit_to_app</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="excel__toolbar">
+          <div class="excel__toolbar-button">
+            <span class="material-icons">format_bold</span>
+          </div>
+
+          <div class="excel__toolbar-button">
+            <span class="material-icons">format_italic</span>
+          </div>
+
+          <div class="excel__toolbar-button">
+            <span class="material-icons">strikethrough_s</span>
+          </div>
+
+          <div class="excel__toolbar-button">
+            <span class="material-icons">format_align_left</span>
+          </div>
+
+          <div class="excel__toolbar-button">
+            <span class="material-icons">format_align_center</span>
+          </div>
+
+          <div class="excel__toolbar-button">
+            <span class="material-icons">format_align_right</span>
+          </div>
+        </div>
+
+        <div class="excel__formula">
+          <div class="excel__formula-info">fx</div>
+          <div
+            class="excel__formula-input"
+            contenteditable
+            spellcheck="false"
+          ></div>
+        </div>
+
+        <div class="excel__table">
+          <div class="excel__table-row">
+            <div class="excel__table-row-info"></div>
+            <div class="excel__table-row-data">
+              <div class="excel__table-row-data-column">A</div>
+              <div class="excel__table-row-data-column">B</div>
+              <div class="excel__table-row-data-column">C</div>
+            </div>
+          </div>
+
+          <div class="excel__table-row">
+            <div class="excel__table-row-info">1</div>
+            <div class="excel__table-row-data">
+              <div class="excel__table-row-data-cell selected" contenteditable>
+                A1
+              </div>
+              <div class="excel__table-row-data-cell" contenteditable>B1</div>
+              <div class="excel__table-row-data-cell" contenteditable>C1</div>
+            </div>
+          </div>
+
+          <div class="excel__table-row">
+            <div class="excel__table-row-info">2</div>
+            <div class="excel__table-row-data">
+              <div class="excel__table-row-data-cell" contenteditable>A1</div>
+              <div class="excel__table-row-data-cell" contenteditable>B1</div>
+              <div class="excel__table-row-data-cell" contenteditable>C1</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
